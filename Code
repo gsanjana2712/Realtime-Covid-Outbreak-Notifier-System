@@ -19,7 +19,7 @@ def getData(url):
 
 if _name_ == "_main_":
     while True:
-        # notifyMe("Harry", "Lets stop the spread of this virus together")
+        # notifyMe("Sanjana", "Lets stop the spread of this virus together")
         myHtmlData = getData('https://www.mohfw.gov.in/')
 
         soup = BeautifulSoup(myHtmlData, 'html.parser')
@@ -39,3 +39,4 @@ if _name_ == "_main_":
                 notifyMe(nTitle, nText)
                 time.sleep(2)
         time.sleep(3600)
+        #time in seconds
